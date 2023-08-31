@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Calling Bullshit</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Calling Bullshit</h1>
+</header>
+<h2 id="context">Context</h2>
+<p>I’m reading this for my book club with my friend. ## Chapter
+summaries</p>
+<h3 id="preface">Preface</h3>
+<p>I agree with their opinion that people fall for things that make them
+feel smart, what they call “second-order bullshit”. People like feeling
+like the insider.</p>
+<p><strong>Harry Frankfurt:</strong> bullshit is a defining
+characteristic of our time.</p>
+<p>They draw a distinction between “old-school” and “new-school”
+bullshit. By old-school, they mean “rhetoric or fancy language”. By
+new-school, they mean data.</p>
+<blockquote>
+<p>New-school bullshit uses the language of math and science and
+statistics to create the impression of rigor and accuracy.</p>
+</blockquote>
+<p>So something like this:</p>
+<p>[[Books/Attachments/The Bullshit Line.png]]</p>
+<p>I disagree with the above dichotomy, because [[Fuck binaries]] and
+because there is too much overlap between the two modes. A less rigid
+model might look like this:</p>
+<p>[[Books/Attachments/The Bullshit Triangle.png]]</p>
+<p>This also happens to map to the [[Trivium]] because I’m smart.</p>
+<p>A lot of their problems with data bullshit are problems of
+<strong>specificity</strong>, by which I mean “people not telling you
+everything right away immediately”. As someone with [[ADHD]] I can
+appreciate that: we all get bored, don’t we?</p>
+<p>The examples they give aren’t great. This is because they are
+<strong>extracts</strong>. It’s very easy to take a piece of writing out
+of context and make it seem deceptive: <strong>you are removing the
+context</strong>. The context might be necessary. For example, they cite
+what appears to be an extract from an oncological paper that makes some
+claims that they call “bullshit” on. But this writing isn’t prima facie
+bullshit: it might just be technical. There is a difference between
+assumed knowledge on the part of the reader, and bullshit. Not
+everything needs to be [[ELI5]].</p>
+<blockquote>
+<p>Many of us don’t feel qualified to challenge information that is
+presented in quantitative form.</p>
+</blockquote>
+<p>I agree with this. They also argue that often only basic logical
+reasoning is required to see through data bullshit: I agree with this
+too.</p>
+<p>Then they get into politics, and that’s where it all falls down of
+course. They argue that</p>
+<blockquote>
+<p>adequate bullshit detection is essential for the survival of liberal
+democracy. Democracy has always relied on a critically thinking
+electorate.</p>
+</blockquote>
+<p>I fundamentally disagree with at least half of this. Democracy <em>in
+no way</em> requires a critically thinking electorate. I would be
+interested to know their definition of “democracy”, and possibly also
+their definition of “relied on”. Arguably a foundational quality of
+liberal democracy is the fact that the citizen is not obligated to think
+critically, in any way. A bit “we shouldn’t let stupid people vote” if I
+choose to be unfair.</p>
+<p>They also cite Mark Galeotti, who said in a <em>New York Times</em>
+op-ed that</p>
+<blockquote>
+<p>the United States government should teach the public to tell when
+they are being manipulated.</p>
+</blockquote>
+<p>I would argue that it is not in the US government’s best interests to
+do is, if it wants to continue as a going concern. Once manipulation is
+adequately defined, a lot of people see government intervention as a
+form of manipulation. They have a monopoly on violence, after all.</p>
+<p>The authors also believe that bullshit can be challenged apolitically
+- I would challenge their definition of “apolitical”. The authors state
+that voters seeing through bullshit adds to the health of a democracy,
+which I do agree with in principle but which contradicts their claim of
+apoliticality. Who defines bullshit, and why? If bullshit detection is
+critical for the functioning of democracy, then <em>these are political
+questions</em>.</p>
+<p>The purpose of education is to “improve bullshit detection”, amongst
+other things. They argue that STEM has been prioritised over critical
+thinking: then why aren’t people comfortable arguing statistics? Hannah
+is an outlier and shouldn’t be counted, but most STEM-lords are happy
+arguing statistics all day long. I disagree with their assessment that
+“in STEM fields, students seldom are given paradoxes that they need to
+resolve, conflicting forms of evidence that they must reconcile,” and so
+forth. Mathematics (the M part) both contains volumes of paradox,
+exceptions, false friends, and requires precise logical reasoning.
+Similarly with the sciences. I don’t think the issue is that STEM
+students lack critical thinking: rather, I think the authors have
+<strong>over</strong>emphasised the degree to which <em>anyone</em> has
+critical thinking skills, in any way.</p>
+<h3 id="chapter-1">Chapter 1</h3>
+<p>They want to answer:</p>
+<ol type="1">
+<li>What is bullshit?</li>
+<li>Where does bullshit come from?</li>
+<li>Why is so much of it produced?</li>
+</ol>
+<p>So I’ll be evaluating this chapter based on how well those questions
+get answered.</p>
+<p>They compare bullshitting to sophistry, being “indifferent to what is
+actually true and interested only in winning arguments”.</p>
+<p>This is an interesting historical note, and worthy of study: you
+might ask <em>why</em> some people are interested in winning arguments.
+Do they have some alterior motive? Do they seek a <em>higher</em> truth,
+or maybe not value truth as highly as other people? Is bullshit simply
+the manifestation of a clash of value systems?</p>
+<p>Instead they talk about shrimp: mantis shrimp in particular, and how
+they sometimes pretend to still have dangerous punching power even
+whilst molting. But they don’t <em>directly</em> argue that this is why
+people spout bullshit. <strong>One could argue</strong> that the authors
+are “using the language of science to create the impression of rigor and
+accuracy,” <strong>couldn’t one?</strong></p>
+<p>They also somewhat arbitrarily assert that</p>
+<blockquote>
+<p>this behaviour isn’t something that these creatures think up and
+decide to carry out. It is merely an evolved response, a sort of
+instinct or reflex.</p>
+</blockquote>
+<p>Why they state this, without evidence, I have no idea. I don’t think
+it’s wrong: it’s just interesting.</p>
+<p>They talk about <strong>theory of mind</strong>, and bring up that
+ravens have a theory of mind. That’s kind of neat. But yeah. Ravens can
+fake out other ravens while making a food cache, and can trick them into
+not being able to find the hidden food. That’s pretty cool.</p>
+<p><strong>Language</strong> is tremendously expressive, in that we can
+convey a broad range of ideas. This, they claim, is one of the
+contributing factors to bullshit proliferation. We can say lots of
+different things, some of which are false, and have the theory of mind
+to <strong>predict what impact they will have on other
+people</strong>.</p>
+<blockquote>
+<p>By paying attention to communication, you are giving other people a
+“handle” they can use to manipulate your behavior.</p>
+</blockquote>
+<p>They draw the distinction between bullshitters who are trying to
+actively deceive, and those who are indifferent to the truth. Which is
+interesting, and I wish they’d done that before all the chat about
+shrimp and ravens. That was kind of a waste of time, now, wasn’t it?</p>
+<p>Even supposedly other-regarding signals carry information about the
+self. When you tell a story about someone else, you’re highlighting
+e.g. that you thought the story was of interest. This is technically
+true, but not interesting, and I don’t think it’s actually doing
+anything here.</p>
+<p>They argue that <strong>vanity generates “a lot” of
+bullshit</strong>. How much? The majority?</p>
+<p>They then go on to talk about Brandolini’s principle, which is this
+idea from 2014(!) that</p>
+<blockquote>
+<p>the amount of energy needed to refute bullshit is an order of
+magnitude bigger than to produce it.</p>
+</blockquote>
+<p>Spurious use of “an order of magnitude” there. Is Brandolini “using
+the language of math to create the impression of rigor and accuracy”?
+<strong>Who could possibly say?!</strong></p>
+<p>They then go on to talk about Andrew Wakefield for a bit, and the
+fact that all of his claims have been widely discredited while people
+continue to spread bullshit about vaccines. But why did Andrew Wakefield
+spread the false claim that “vaccines cause autism” in the first
+place?</p>
+<p>The answer is: he didn’t. He claimed specifically that the
+“triple-shot” MMR vaccine caused autism. And the reason that he did this
+is that he had a business selling single-shot MMR vaccines. He stood to
+make <strong>money</strong> off of his claim. It wasn’t that Andrew
+Wakefield “simply didn’t care about the truth”. The reality is, he cared
+<em>less</em> about the truth than about <strong>making money</strong>.
+He was motivated - quite simply - by greed. See for example Hbomberguy’s
+video on the subject. This is relegated to a footnote, but it is a
+<strong>major driver</strong> of Wakefield’s bullshit.</p>
+<p>Let’s assess the chapter, in light of those three questions:</p>
+<ol type="1">
+<li>What is bullshit?
+<ul>
+<li>This is adequately explained, I think. It’s just a term: the
+definition can be loose enough.</li>
+</ul></li>
+<li>Where does bullshit come from?
+<ul>
+<li>Under-explored: shrimp, maybe?</li>
+</ul></li>
+<li>Why is so much of it produced?
+<ul>
+<li>That depends on your definition of what “why” is.</li>
+<li>“Why” is so much bullshit produced? Because it’s harder to get rid
+of than it is to produce it? No - that only explains why there’s so much
+of it, <strong>not</strong> why it was produced in the first place.</li>
+<li>The failure of this book to highlight power and financial motivators
+in its first two chapters is pretty shocking. Bullshit is
+<em>fundamentally</em> political, but they’ve decided to study it
+through an apolitical lens. They’re not allowing themselves to see the
+financial motivators. It’s a shame. #### Definitions</li>
+</ul></li>
+</ol>
+<ul>
+<li><strong>paltering</strong> - misleading rather than directly lying
+<ul>
+<li>gives the liar a level of plausible deniability</li>
+<li>only possible because of how we use language
+<ul>
+<li><strong>pragmatics</strong> - implied meaning</li>
+<li><strong>implicature</strong> - what a sentence is used to mean, not
+necessarily what it <em>literally</em> means</li>
+</ul></li>
+</ul></li>
+<li><strong>weasel wording</strong> - using the gap between literal
+meaning and implicature to avoid responsibility
+<ul>
+<li>they mention advertising and politics
+<ul>
+<li>“reduce plaque by <strong>up to</strong> 50%”</li>
+<li>“<strong>people are saying</strong>”</li>
+</ul></li>
+</ul></li>
+<li><strong>self-regarding signal</strong> - a signal that refers to the
+signaller itself
+<ul>
+<li>e.g. “I’m sexy”, “I’m poisonous”</li>
+<li>they claim this is how animals typically communicate</li>
+</ul></li>
+<li><strong>other-regarding signal</strong> - a signal that refers to
+some other signified
+<ul>
+<li>they claim these are uncommon among animal signals, except in cases
+of alarm
+<ul>
+<li>counterpoint: bees, ants, ravens, dogs</li>
+<li>why are they claiming these things?</li>
+</ul></li>
+<li>they argue human vocabulary is necessary for talking about things
+other than ourselves
+<ul>
+<li>I don’t think this is necessarily true or adequately argued</li>
+</ul></li>
+</ul></li>
+</ul>
+</body>
+</html>

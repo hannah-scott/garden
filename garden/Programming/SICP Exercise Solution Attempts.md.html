@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>SICP Exercise Solution Attempts</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h2 id="purpose">Purpose</h2>
+<p>This is a longpost of annotated solutions to problems in <a
+href="https://mitp-content-server.mit.edu/books/sectbyfn/books_pres_0/6515/sicp.zip/full-text/book/book.html">Structure
+and Interpretation of Computer Programs</a>. I’ll add to it as I
+progress, and hopefully finish the whole book at some point.</p>
+<p>Obviously, spoilers for SICP exercises.</p>
+<p>Links to all exercises are <a
+href="https://mitp-content-server.mit.edu/books/sectbyfn/books_pres_0/6515/sicp.zip/full-text/book/book-Z-H-37.html#%_chap_Temp_850">here</a>.</p>
+<h2 id="section">1.</h2>
+<h3 id="exercise-1.1">Exercise 1.1</h3>
+<pre class="plain"><code>10                                  =   10
+(+ 5 3 4)                           =   12
+(- 9 1)                             =   8
+(/ 6 2)                             =   3
+(+ (* 2 4) (- 4 6))                 =   6
+(define a 3)                        =&gt;  Value: a
+(define b (+ a 1))                  =&gt;  Value: b
+(+ a b (* a b))                     =&gt;  (+ 3 4 (* 3 4)) 
+                                    =&gt;  (+ 3 4 12)
+                                    =   16
+(= a b)                             =   #f
+(if (and (&gt; b a) (&lt; b (* a b)))      
+    b
+    a)                              =   4
+(cond ((= a 4) 6)                    
+      ((= b 4) (+ 6 7 a))
+      (else 25))                    =   16
+(+ 2 (if (&gt; b a) b a))              =   6
+(* (cond ((&gt; a b) a)
+         ((&lt; a b) b)
+         (else -1))
+   (+ a 1))                         =&gt;  (* (cond ((&gt; 3 4) 3)
+                                                 ((&lt; 3 4) 4)
+                                                 (else -1))
+                                            (+ 3 1))
+                                    =&gt;   (* 4 4)
+                                    =    16</code></pre>
+<h3 id="exercise-1.2">Exercise 1.2</h3>
+<pre class="plain"><code>(/ (+ 5 4 (- 2
+             (- 3 
+                (+ 6 
+                   (/ 4 3))))
+   (* 3 
+      (- 6 2) 
+      (- 2 7)))</code></pre>
+<h3 id="exercise-1.3">Exercise 1.3</h3>
+<p>Define a procedure that takes three arguments and returns the sum of
+the squares of the two larger numbers.</p>
+<pre class="plain"><code>(define (sum-of-squares a b)
+        (+ (* a a) (* b b)))
+        
+(define (solution a b c)
+        (cond ((and (&lt; a b) (&lt; a c)) (sum-of-squares b c))
+              ((and (&lt; b a) (&lt; b c)) (sum-of-squares a c))
+              (else (sum-of-squares a b))))</code></pre>
+<h3 id="exercise-1.4">Exercise 1.4</h3>
+<p>Describe</p>
+<pre class="plain"><code>(define (a-plus-abs-b a b)
+                ((if (&gt; b 0) + -) a b))</code></pre>
+<p>When b is less than 0, this will return a - b. Otherwise, it will
+return a + b. This is just a + |b|.</p>
+<h3 id="exercise-1.5">Exercise 1.5</h3>
+<p>In applicative order we evaluate the arguments of functions
+<strong>before</strong> the function is expanded. So attempting to
+evaluate this expression, we would have</p>
+<pre class="plain"><code>(test 0 (p)) =&gt; (test 0 (p))
+             =&gt; (test 0 (p))
+             =&gt; ...</code></pre>
+<p>The expression never changes when evaluating the arguments. The
+process would continuously evaluate <code>(p) =&gt; (p)</code> and never
+terminate.</p>
+<p>But in normal order evaluation the function is expanded first.
+Therefore we would have</p>
+<pre class="plain"><code>(test 0 (p)) 
+=&gt;
+(if (= 0 0)
+    0
+    (p))</code></pre>
+<p>Since the condition is true, we will never return <code>(p)</code> -
+so there is no need to evaluate it. This would simply return 0.</p>
+<h3 id="exercise-1.6">Exercise 1.6</h3>
+<p>Eva is mistaken.</p>
+<p>In applicative order evaluation, all arguments are evaluated before a
+function itself is expanded. From the structure of Alyssa’s code, we see
+that the alternative to <code>new-if</code> (<code>sqrt-iter</code>)
+itself contains a call to <code>new-if</code>. Attempting to use this
+code will result in a never-ending nest of <code>new-if</code>s.</p>
+<p>Why doesn’t this happen with regular <code>if</code> expressions? My
+understanding is that <code>if</code> is a special form where</p>
+<ol type="1">
+<li>The condition is evaluated first</li>
+<li>And based on this, <em>only</em> the consequent or alternative are
+evaluated</li>
+</ol>
+<p>For well-formed recursion where the condition will eventually be
+true, this allows recursive calls to <code>if</code> where
+<code>if</code> itself is in the alternative.</p>
+</body>
+</html>
