@@ -1,4 +1,6 @@
-# The 'waiting for' list
+---
+title: "The 'waiting for' list"
+---
 
 Whenever work is delegated, an email is sent that needs a response, something is ordered, or something is blocked --- it goes here!
 

@@ -1,4 +1,6 @@
-# [Mainframes](.md)
+---
+title: "Mainframes"
+---
 
 [*What are Mainframes?* video](https://invidious.lunar.icu/embed/ximv-PwAKnc)
 
@@ -11,7 +13,7 @@ Lots of I/O connectivity. Often deployed in places that require processing lots 
 
 For example, IBM mainframes are used in banks to process card transactions.
 
-They use big custom CPUs, and *SAPs* - which exist just to move data around very quickly. Each I/O card might also have its own processing cores, potentially a shit ton of processors.
+They use big custom CPUs, and _SAPs_ - which exist just to move data around very quickly. Each I/O card might also have its own processing cores, potentially a shit ton of processors.
 
 All of this is designed for reliability and redundancy. They can be deployed in places where no amount of downtime is acceptable, at all.
 

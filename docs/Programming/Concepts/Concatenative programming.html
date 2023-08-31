@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>tmp</title>
+  <title>Concatenative programming</title>
   <style>
     html {
       color: #1a1a1a;
@@ -236,13 +236,15 @@
   <![endif]-->
 </head>
 <body>
-<h1 id="concatenative-programming">Concatenative programming</h1>
+<header id="title-block-header">
+<h1 class="title">Concatenative programming</h1>
+</header>
 <p>In a concatenative language, every expression is a function and
 functions are composed by being listed one after another — concatenated.
 So something like</p>
 <p><span
-class="math display"><em>f</em>(<em>g</em>(<em>h</em>(<em>x</em>)))</span>
-might be represented as</p>
+class="math display"><em>f</em>(<em>g</em>(<em>h</em>(<em>x</em>)))</span></p>
+<p>might be represented as</p>
 <pre class="forth"><code>x h g f</code></pre>
 <p>This is in contrast with an <a
 href="Programming/Concepts/Applicative%20programming.html">applicative
@@ -251,7 +253,8 @@ programming language</a>, where it might look like</p>
 class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>f(g(h(x)))</span></code></pre></div>
 <p>Typically concatenative languages are stack-based, with
 <code>x</code> denoting the function “push the value <span
-class="math inline"><em>x</em></span> onto the stack”. ## Examples</p>
+class="math inline"><em>x</em></span> onto the stack”.</p>
+<h2 id="examples">Examples</h2>
 <p><a href="/Programming/Languages/Forth.html">Forth</a> is a
 concatenative language, as is Joy. And so is the typesetting language
 PostScript, weirdly.</p>

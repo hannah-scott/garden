@@ -1,10 +1,13 @@
-# Concatenative programming
+---
+title: "Concatenative programming"
+---
 
 In a concatenative language, every expression is a function and functions are composed by being listed one after another --- concatenated. So something like
 
 $$
 f(g(h(x)))
 $$
+
 might be represented as
 
 ```forth
@@ -18,6 +21,7 @@ f(g(h(x)))
 ```
 
 Typically concatenative languages are stack-based, with `x` denoting the function "push the value $x$ onto the stack".
+
 ## Examples
 
 [Forth](garden/Programming/Languages/Forth.md) is a concatenative language, as is Joy. And so is the typesetting language PostScript, weirdly.

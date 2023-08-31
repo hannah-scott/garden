@@ -2,5 +2,4 @@
 title: "Books"
 ---
 
-
-[Calling Bullshit](garden/Books/Calling%20Bullshit.md)
+- [Calling Bullshit](garden/Books/Calling%20Bullshit.md)

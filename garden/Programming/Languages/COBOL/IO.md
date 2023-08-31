@@ -31,6 +31,7 @@ This is done in the `ENVIRONMENT` division. You assign the file using the format
 This is done in the `DATA` division, under the `FILE` section. Essentially when reading and writing records, the program needs to know what a record looks like.
 
 For a lot of I/O purposes you're also going to want an identical record in the `WORKING-STORAGE` section too.
+
 ### Example
 
 This is a definition for a `RUN-RECORD`, which will hold details about some runs you've been going on, for example. 

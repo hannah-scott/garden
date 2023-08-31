@@ -2,7 +2,6 @@
 title: "Javascript"
 ---
 
-
 #code #javascript 
 
 ## Example

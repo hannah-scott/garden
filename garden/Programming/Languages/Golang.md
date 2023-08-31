@@ -2,7 +2,6 @@
 title: "Golang"
 ---
 
-
 #code #golang #go
 
 It's a programming language!

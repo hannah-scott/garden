@@ -2,7 +2,6 @@
 title: "my cool (s)hell script"
 ---
 
-
 ```sh
 #!/bin/sh
 # grow the garden

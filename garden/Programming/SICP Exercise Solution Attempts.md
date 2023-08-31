@@ -1,3 +1,7 @@
+---
+title: "SICP Exercise Solution Attempts"
+---
+
 ## Purpose
 
 This is a longpost of annotated solutions to problems in [Structure and Interpretation of Computer Programs](https://mitp-content-server.mit.edu/books/sectbyfn/books_pres_0/6515/sicp.zip/full-text/book/book.html). I'll add to it as I progress, and hopefully finish the whole book at some point.
@@ -6,7 +10,7 @@ Obviously, spoilers for SICP exercises.
 
 Links to all exercises are [here](https://mitp-content-server.mit.edu/books/sectbyfn/books_pres_0/6515/sicp.zip/full-text/book/book-Z-H-37.html#%_chap_Temp_850).
 
-## 1.
+## 1
 
 ### Exercise 1.1
 
@@ -110,6 +114,6 @@ In applicative order evaluation, all arguments are evaluated before a function i
 Why doesn't this happen with regular `if` expressions? My understanding is that `if` is a special form where
 
 1. The condition is evaluated first
-2. And based on this, *only* the consequent or alternative are evaluated
+2. And based on this, _only_ the consequent or alternative are evaluated
 
 For well-formed recursion where the condition will eventually be true, this allows recursive calls to `if` where `if` itself is in the alternative.

@@ -1,9 +1,11 @@
 ---
 title: "Calling Bullshit"
 ---
+
 ## Context
 
 I'm reading this for my book club with my friend.
+
 ## Chapter summaries
 
 ### Preface
@@ -62,7 +64,7 @@ So I'll be evaluating this chapter based on how well those questions get answere
 
 They compare bullshitting to sophistry, being "indifferent to what is actually true and interested only in winning arguments". 
 
-This is an interesting historical note, and worthy of study: you might ask _why_ some people are interested in winning arguments. Do they have some alterior motive? Do they seek a _higher_ truth, or maybe not value truth as highly as other people? Is bullshit simply the manifestation of a clash of value systems?
+This is an interesting historical note, and worthy of study: you might ask _why_ some people are interested in winning arguments. Do they have some ulterior motive? Do they seek a _higher_ truth, or maybe not value truth as highly as other people? Is bullshit simply the manifestation of a clash of value systems?
 
 Instead they talk about shrimp: mantis shrimp in particular, and how they sometimes pretend to still have dangerous punching power even whilst molting. But they don't _directly_ argue that this is why people spout bullshit. **One could argue** that the authors are "using the language of science to create the impression of rigor and accuracy," **couldn't one?**
 
@@ -104,6 +106,7 @@ Let's assess the chapter, in light of those three questions:
 	- That depends on your definition of what "why" is.
 	- "Why" is so much bullshit produced? Because it's harder to get rid of than it is to produce it? No - that only explains why there's so much of it, **not** why it was produced in the first place.
 	- The failure of this book to highlight power and financial motivators in its first two chapters is pretty shocking. Bullshit is _fundamentally_ political, but they've decided to study it through an apolitical lens. They're not allowing themselves to see the financial motivators. It's a shame.
+
 #### Definitions
 
 - **paltering** - misleading rather than directly lying

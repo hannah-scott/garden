@@ -4,7 +4,7 @@ title: "COBOL Overview"
 
 Stands for **Co**mmon **B**usiness-**O**riented **L**anguage.
 
-It's a "domain specific business-oriented language", used mainly for the kinds of record-based tasks that SQL is used for[^1].
+It's a "domain specific business-oriented language", used mainly for the kinds of record-based tasks that SQL is used for.[^1]
 
 It usually runs on [mainframes](Mainframe), so we're talking lots of reading and writing.
 
@@ -29,6 +29,7 @@ A lot of modern COBOL editors show you reference lines, e.g.
 ![COBOL](https://docs.monadical.com/uploads/upload_4792a382fe16ece63202a836f091c3e4.png)
 
 This is because COBOL source used to be printed on punch cards and read by hardware that passed light through holes in the cards. So, knowing which column contained which information made things a lot easier on the hardware.
+
 ### Terminology
 
 - **division**
