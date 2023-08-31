@@ -2,7 +2,7 @@
 title: 🌳 hannah's digital garden
 ---
 
-A [digital garden](garden/digital%20garden.md) **not** hosted with [Quartz](garden/Programming/Quartz.md), but instead generated via a [shell script](garden/my%20cool%20hell%20script.md)
+A [digital garden](garden/digital%20garden.md) **not** hosted with [Quartz](garden/Programming/Quartz.md), but instead generated via a [shell script](garden/my%20cool%20(s)hell%20script.md)
 
 - [Books](garden/Books/index.md)
 - [Marathon Training](garden/Marathon/Marathon%20Training.md)
